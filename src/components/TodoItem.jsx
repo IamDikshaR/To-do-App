@@ -1,3 +1,10 @@
+import styles from "../css/todoItem.module.css";
+
 export default function TodoItem({ item }) {
-  return <h3>{item}</h3>;
+  return (
+    <div className={styles.container}>
+      <div className={styles.items}>{item}</div>
+      <hr className={styles.line} />
+    </div>
+  );
 }

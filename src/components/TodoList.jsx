@@ -1,11 +1,15 @@
 import TodoItem from "./TodoItem";
+import styles from "../css/todoList.module.css";
+
 export default function TodoList({ todos }) {
   return (
     <>
-      {" "}
-      {todos.map((item) => (
-        <TodoItem key={item} item={item} />
-      ))}
+      <div className={styles.list}>
+        {/* {" "} */}
+        {todos.map((item) => (
+          <TodoItem key={item} item={item} />
+        ))}
+      </div>
     </>
   );
 }
